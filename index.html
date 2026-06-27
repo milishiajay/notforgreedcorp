@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not For Greed Corporation</title>
-    <meta name="description" content="Not For Greed Corporation — necessities at cost, luxury carries profit. A better way to buy together.">
+    <title>Not For Greed Corporation — Necessities at Cost</title>
+    <meta name="description" content="Not For Greed Corporation — a community buying club where members pool purchasing power, invest in local suppliers, and access necessities at cost. Built by the 99%, for the 99%.">
     <style>
         :root {
             --bg: #0a0e0a;
             --surface: #111814;
+            --surface2: #162018;
             --accent: #2d6a4f;
             --accent-bright: #52b788;
+            --accent-dim: #1b4332;
             --text: #e0e0e0;
             --text-dim: #8a9a8a;
             --border: #1a2a1f;
+            --warn: #e9c46a;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -24,49 +27,56 @@
             color: var(--text);
             line-height: 1.7;
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
         }
 
         .container {
-            max-width: 760px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 24px;
             width: 100%;
         }
 
+        /* NAV */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(10, 14, 10, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            padding: 14px 0;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--accent-bright);
+            letter-spacing: -0.01em;
+        }
+
+        nav .links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 24px;
+            transition: color 0.2s;
+        }
+
+        nav .links a:hover { color: var(--accent-bright); }
+
         /* HERO */
         .hero {
-            padding: 120px 0 80px;
+            padding: 100px 0 70px;
             text-align: center;
         }
 
-        .hero h1 {
-            font-size: clamp(2rem, 6vw, 3.5rem);
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 20px;
-            line-height: 1.15;
-        }
-
-        .hero h1 .highlight {
-            color: var(--accent-bright);
-        }
-
-        .hero .tagline {
-            font-size: clamp(1rem, 3vw, 1.3rem);
-            color: var(--text-dim);
-            margin-bottom: 40px;
-            max-width: 560px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero .tagline strong {
-            color: var(--text);
-        }
-
-        .badge {
+        .hero .badge {
             display: inline-block;
             padding: 6px 16px;
             background: var(--surface);
@@ -74,9 +84,30 @@
             border-radius: 999px;
             font-size: 0.85rem;
             color: var(--accent-bright);
-            margin-bottom: 32px;
+            margin-bottom: 28px;
             letter-spacing: 0.03em;
         }
+
+        .hero h1 {
+            font-size: clamp(2rem, 6vw, 3.4rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            line-height: 1.12;
+        }
+
+        .hero h1 .highlight { color: var(--accent-bright); }
+
+        .hero .tagline {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: var(--text-dim);
+            margin-bottom: 36px;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .tagline strong { color: var(--text); }
 
         .cta {
             display: inline-block;
@@ -87,100 +118,155 @@
             border-radius: 8px;
             font-weight: 600;
             font-size: 1rem;
-            transition: background 0.2s ease;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
         }
 
         .cta:hover {
             background: var(--accent-bright);
             color: var(--bg);
+            transform: translateY(-1px);
         }
 
-        /* PRINCIPLES */
-        .principles {
-            padding: 60px 0;
-            border-top: 1px solid var(--border);
+        .cta.secondary {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            margin-left: 12px;
         }
 
-        .principles h2 {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
+        .cta.secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent-bright);
+            background: var(--surface);
+        }
+
+        /* SECTION HEADER */
+        section { padding: 70px 0; border-top: 1px solid var(--border); }
+
+        section h2 {
+            font-size: clamp(1.4rem, 4vw, 2rem);
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        section .subtitle {
             text-align: center;
             color: var(--text-dim);
-            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: 50px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        .principle-grid {
+        /* THE PROBLEM */
+        .problem {
+            background: var(--surface);
+        }
+
+        .problem-box {
+            max-width: 680px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .problem-box p {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+        }
+
+        .problem-box p strong { color: var(--text); }
+
+        .stat-row {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat .num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-bright);
+            display: block;
+        }
+
+        .stat .label {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        /* NECESSITIES GRID */
+        .necessity-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
         }
 
-        .principle {
+        .necessity-card {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 12px;
-            padding: 28px 24px;
-            transition: border-color 0.2s ease;
+            padding: 28px 20px;
+            transition: all 0.2s ease;
+            text-align: center;
         }
 
-        .principle:hover {
+        .necessity-card:hover {
             border-color: var(--accent);
+            transform: translateY(-2px);
         }
 
-        .principle .icon {
-            font-size: 1.8rem;
+        .necessity-card .icon {
+            font-size: 2.2rem;
             margin-bottom: 14px;
         }
 
-        .principle h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+        .necessity-card h3 {
+            font-size: 1.05rem;
             color: var(--accent-bright);
+            margin-bottom: 6px;
         }
 
-        .principle p {
-            font-size: 0.92rem;
+        .necessity-card p {
+            font-size: 0.85rem;
             color: var(--text-dim);
         }
 
-        /* HOW IT WORKS */
-        .how {
-            padding: 60px 0;
-            border-top: 1px solid var(--border);
+        /* THE CYCLE */
+        .cycle {
+            background: var(--surface);
         }
 
-        .how h2 {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-            text-align: center;
-            font-weight: 400;
-        }
-
-        .how ol {
-            list-style: none;
-            counter-reset: step;
-            max-width: 520px;
+        .cycle-diagram {
+            max-width: 700px;
             margin: 0 auto;
+            position: relative;
         }
 
-        .how ol li {
-            counter-increment: step;
-            padding: 20px 0 20px 56px;
-            position: relative;
+        .cycle-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px 0;
             border-bottom: 1px solid var(--border);
         }
 
-        .how ol li:last-child {
-            border-bottom: none;
-        }
+        .cycle-step:last-child { border-bottom: none; }
 
-        .how ol li::before {
-            content: counter(step);
-            position: absolute;
-            left: 0;
-            top: 20px;
-            width: 36px;
-            height: 36px;
+        .cycle-step .num {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
             background: var(--accent);
             color: white;
             border-radius: 50%;
@@ -188,123 +274,746 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
-        .how ol li strong {
-            display: block;
+        .cycle-step .content h3 {
+            font-size: 1.1rem;
             margin-bottom: 4px;
-            font-size: 1.05rem;
+            color: var(--text);
         }
 
-        .how ol li span {
-            color: var(--text-dim);
+        .cycle-step .content p {
             font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .cycle-arrow {
+            text-align: center;
+            color: var(--accent);
+            font-size: 1.2rem;
+            padding: 4px 0;
+        }
+
+        .cycle-loop {
+            text-align: center;
+            margin-top: 24px;
+            padding: 16px;
+            background: var(--surface2);
+            border-radius: 12px;
+            border: 1px solid var(--accent-dim);
+        }
+
+        .cycle-loop p {
+            color: var(--accent-bright);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* TWO PATHS */
+        .paths {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .path {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px 24px;
+        }
+
+        .path .path-label {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .path.a .path-label {
+            background: var(--accent-dim);
+            color: var(--accent-bright);
+        }
+
+        .path.b .path-label {
+            background: rgba(233, 196, 106, 0.15);
+            color: var(--warn);
+        }
+
+        .path h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+        }
+
+        .path p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 12px;
+        }
+
+        .path ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .path ul li {
+            font-size: 0.88rem;
+            color: var(--text-dim);
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .path ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* SUPPLIERS */
+        .supplier-section {
+            margin-bottom: 40px;
+        }
+
+        .supplier-section h3 {
+            font-size: 1.2rem;
+            color: var(--accent-bright);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .supplier-section .desc {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+        }
+
+        .supplier-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 14px;
+        }
+
+        .supplier-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px 18px;
+            transition: border-color 0.2s;
+        }
+
+        .supplier-card:hover { border-color: var(--accent-dim); }
+
+        .supplier-card .name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .supplier-card .type {
+            display: inline-block;
+            font-size: 0.75rem;
+            color: var(--accent-bright);
+            background: var(--accent-dim);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .supplier-card .info {
+            font-size: 0.83rem;
+            color: var(--text-dim);
+        }
+
+        .supplier-card .info a {
+            color: var(--accent-bright);
+            text-decoration: none;
+        }
+
+        .supplier-card .info a:hover { text-decoration: underline; }
+
+        /* MEMBERSHIP */
+        .membership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .tier {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .tier.featured {
+            border-color: var(--accent);
+        }
+
+        .tier .tier-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-bright);
+            margin-bottom: 8px;
+        }
+
+        .tier .tier-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .tier .tier-period {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 16px;
+        }
+
+        .tier ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .tier ul li {
+            font-size: 0.88rem;
+            color: var(--text-dim);
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .tier ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* FAQ */
+        .faq {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 18px 0;
+        }
+
+        .faq-item summary {
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 1.3rem;
+            color: var(--accent);
+            transition: transform 0.2s;
+        }
+
+        .faq-item[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-item p {
+            margin-top: 12px;
+            font-size: 0.92rem;
+            color: var(--text-dim);
         }
 
         /* FOOTER */
         footer {
-            margin-top: auto;
-            padding: 40px 0;
+            padding: 50px 0 30px;
             border-top: 1px solid var(--border);
             text-align: center;
+        }
+
+        footer .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--accent-bright);
+            margin-bottom: 8px;
         }
 
         footer p {
             color: var(--text-dim);
             font-size: 0.85rem;
+            margin-bottom: 4px;
         }
 
-        footer .logo {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--accent-bright);
+        footer .links {
+            margin: 20px 0;
+        }
+
+        footer .links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.85rem;
+            margin: 0 12px;
+        }
+
+        footer .links a:hover { color: var(--accent-bright); }
+
+        /* MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 200;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 440px;
+            width: 100%;
+        }
+
+        .modal h3 {
+            font-size: 1.3rem;
             margin-bottom: 8px;
-            letter-spacing: -0.01em;
         }
 
-        @media (max-width: 600px) {
-            .hero { padding: 80px 0 60px; }
-            .principle-grid { grid-template-columns: 1fr; }
+        .modal p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 24px;
+        }
+
+        .modal .field {
+            margin-bottom: 16px;
+        }
+
+        .modal label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            margin-bottom: 4px;
+        }
+
+        .modal input, .modal select {
+            width: 100%;
+            padding: 10px 14px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+
+        .modal input:focus, .modal select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .modal .close {
+            float: right;
+            cursor: pointer;
+            color: var(--text-dim);
+            font-size: 1.3rem;
+        }
+
+        .modal .close:hover { color: var(--text); }
+
+        @media (max-width: 700px) {
+            .paths { grid-template-columns: 1fr; }
+            nav .links a { margin-left: 14px; font-size: 0.85rem; }
+            .cta.secondary { margin-left: 0; margin-top: 12px; }
         }
     </style>
 </head>
 <body>
 
-    <section class="hero">
+    <!-- NAV -->
+    <nav>
         <div class="container">
-            <span class="badge">Coming Soon</span>
+            <div class="logo">NFG Corp</div>
+            <div class="links">
+                <a href="#necessities">Necessities</a>
+                <a href="#cycle">The Cycle</a>
+                <a href="#suppliers">Suppliers</a>
+                <a href="#join">Join</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="border-top: none;">
+        <div class="container">
+            <span class="badge">Moncton · Dieppe · New Brunswick</span>
             <h1>Not For Greed <span class="highlight">Corporation</span></h1>
             <p class="tagline">
                 <strong>Necessities at cost.</strong> Luxury carries profit.<br>
-                A community buying club built on fairness, not markup.
+                Members pool purchasing power, invest in local suppliers, and build a self-sustaining cycle that works for everyone.
             </p>
-            <a href="#" class="cta" id="notify-btn">Get Early Access</a>
+            <a href="#join" class="cta">Join the Club</a>
+            <a href="#cycle" class="cta secondary">How It Works</a>
         </div>
     </section>
 
-    <section class="principles">
+    <!-- THE PROBLEM -->
+    <section class="problem" id="problem">
         <div class="container">
-            <h2>What We Believe</h2>
-            <div class="principle-grid">
-                <div class="principle">
-                    <div class="icon">🌾</div>
-                    <h3>Essentials Are Not a Profit Center</h3>
-                    <p>Food, household goods, basics — these should flow at cost. Nobody should profit off someone's need to eat or stay warm.</p>
-                </div>
-                <div class="principle">
-                    <div class="icon">🤝</div>
-                    <h3>Collective Buying Power</h3>
-                    <p>We pool demand and negotiate directly with suppliers. No middlemen skimming margin. The savings stay with the members.</p>
-                </div>
-                <div class="principle">
-                    <div class="icon">📊</div>
-                    <h3>Radical Transparency</h3>
-                    <p>Every price, every cost, every margin — visible to every member. You see exactly what you pay and why.</p>
+            <div class="problem-box">
+                <p>The groceries you need to survive carry a <strong>25-40% markup</strong>.</p>
+                <p>The soap, the toothpaste, the heat — every basic necessity is a <strong>profit center</strong> for someone who doesn't need the money.</p>
+                <p>Meanwhile, the people producing the actual goods — the farmers, the makers — get squeezed harder every year.</p>
+                <div class="stat-row">
+                    <div class="stat">
+                        <span class="num">25-40%</span>
+                        <span class="label">Grocery markup on basics</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num">~8%</span>
+                        <span class="label">What the farmer actually gets</span>
+                    </div>
+                    <div class="stat">
+                        <span class="num">200:1</span>
+                        <span class="label">CEO-to-worker pay ratio (avg)</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="how">
+    <!-- NECESSITIES -->
+    <section id="necessities">
         <div class="container">
-            <h2>How It Works</h2>
-            <ol>
-                <li>
-                    <strong>Join the Club</strong>
-                    <span>Become a member. Small annual fee covers operating costs — nothing more.</span>
-                </li>
-                <li>
-                    <strong>We Buy Together</strong>
-                    <span>Combined purchasing power means wholesale prices on everything you actually need.</span>
-                </li>
-                <li>
-                    <strong>You Pay Cost</strong>
-                    <span>What we pay the supplier is what you pay. No markup. No hidden fees. No greed.</span>
-                </li>
-                <li>
-                    <strong>Want Something Nice?</strong>
-                    <span>Luxury and specialty items carry a modest margin — that's what keeps the club running without gouging on basics.</span>
-                </li>
-            </ol>
+            <h2>The Necessities</h2>
+            <p class="subtitle">These are the things every human needs to survive and live with dignity. They should flow at cost — no one should profit off someone's need to eat, stay warm, or stay clean.</p>
+            <div class="necessity-grid">
+                <div class="necessity-card">
+                    <div class="icon">🍞</div>
+                    <h3>Food</h3>
+                    <p>Staples, fresh produce, protein, dairy — the fuel that keeps us alive.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">💧</div>
+                    <h3>Water</h3>
+                    <p>Clean drinking water. Accessible to all, always.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">🏠</div>
+                    <h3>Shelter</h3>
+                    <p>A roof, heat, basic comfort. Not a luxury — a right.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">⚡</div>
+                    <h3>Energy</h3>
+                    <p>Heating, electricity, cooking fuel. Staying warm shouldn't bankrupt you.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">🧼</div>
+                    <h3>Hygiene & Health</h3>
+                    <p>Soap, toothpaste, menstrual products, basic medicine, first aid.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">👕</div>
+                    <h3>Clothing</h3>
+                    <p>Basic, durable essentials. Not fashion — function.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">🚗</div>
+                    <h3>Transportation</h3>
+                    <p>Getting to work, to food, to family. Mobility is access.</p>
+                </div>
+                <div class="necessity-card">
+                    <div class="icon">📱</div>
+                    <h3>Communication</h3>
+                    <p>Phone, internet — the infrastructure of modern participation.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- THE CYCLE -->
+    <section class="cycle" id="cycle">
+        <div class="container">
+            <h2>The Cycle</h2>
+            <p class="subtitle">A self-sustaining loop. Member capital invests in local suppliers. Suppliers provide at cost. Members save money and attract more members. The cycle grows itself.</p>
+            <div class="cycle-diagram">
+                <div class="cycle-step">
+                    <div class="num">1</div>
+                    <div class="content">
+                        <h3>Members Join & Buy Shares</h3>
+                        <p>Members pay a small annual fee and optionally buy shares in NFG. This creates the capital pool.</p>
+                    </div>
+                </div>
+                <div class="cycle-arrow">↓</div>
+                <div class="cycle-step">
+                    <div class="num">2</div>
+                    <div class="content">
+                        <h3>Capital Invests in Local Suppliers</h3>
+                        <p>NFG uses the capital pool to invest in local farms, producers, and businesses — pre-purchasing inventory, funding equipment, guaranteeing volume.</p>
+                    </div>
+                </div>
+                <div class="cycle-arrow">↓</div>
+                <div class="cycle-step">
+                    <div class="num">3</div>
+                    <div class="content">
+                        <h3>Suppliers Provide at Near-Cost</h3>
+                        <p>In exchange for guaranteed volume and investment, suppliers provide necessities at near-cost pricing — passing savings directly to members.</p>
+                    </div>
+                </div>
+                <div class="cycle-arrow">↓</div>
+                <div class="cycle-step">
+                    <div class="num">4</div>
+                    <div class="content">
+                        <h3>Members Save 20-40%</h3>
+                        <p>Members access food, hygiene, energy, and other necessities at actual cost — not retail markup. The savings are real and immediate.</p>
+                    </div>
+                </div>
+                <div class="cycle-arrow">↓</div>
+                <div class="cycle-step">
+                    <div class="num">5</div>
+                    <div class="content">
+                        <h3>Savings Attract More Members</h3>
+                        <p>Word spreads. More people join for the savings. More members = more capital = more investment in local suppliers.</p>
+                    </div>
+                </div>
+                <div class="cycle-arrow">↓</div>
+                <div class="cycle-step">
+                    <div class="num">6</div>
+                    <div class="content">
+                        <h3>Surplus Reinvested</h3>
+                        <p>Any surplus at year-end goes back into the cycle: worker profit share, community dividends, growth reserve, and a community impact fund.</p>
+                    </div>
+                </div>
+                <div class="cycle-loop">
+                    <p>↻ The cycle repeats. Each turn grows the community, strengthens local suppliers, and reduces dependence on profit-driven supply chains.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TWO PATHS -->
+    <section id="paths">
+        <div class="container">
+            <h2>Two Paths for Every Necessity</h2>
+            <p class="subtitle">For each category of need, NFG pursues the most effective path — whichever gets necessities to members at the lowest sustainable price.</p>
+            <div class="paths">
+                <div class="path a">
+                    <span class="path-label">PATH A — Partner</span>
+                    <h3>Negotiate with Local Suppliers</h3>
+                    <p>We approach local farms, producers, and businesses with collective volume. They provide at near-cost; we guarantee demand and invest in their growth.</p>
+                    <ul>
+                        <li>Identify local suppliers for each necessity</li>
+                        <li>Leverage collective purchasing power for volume discounts</li>
+                        <li>Invest capital in supplier infrastructure (equipment, land, facilities)</li>
+                        <li>Guarantee pre-purchase volume to de-risk supplier operations</li>
+                        <li>Suppliers keep their independence — we're a customer, not an owner</li>
+                    </ul>
+                </div>
+                <div class="path b">
+                    <span class="path-label">PATH B — Build</span>
+                    <h3>Start Our Own Store</h3>
+                    <p>If no local supplier will provide at near-cost, NFG starts its own business unit to fill the gap. Member capital funds it; member demand sustains it.</p>
+                    <ul>
+                        <li>Identify gaps where suppliers won't negotiate</li>
+                        <li>Use member capital to start a co-op business unit</li>
+                        <li>Operate at cost — no markup, no profit extraction</li>
+                        <li>Hire from within the membership (worker members)</li>
+                        <li>Surplus from the unit goes back into the cycle</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPPLIERS -->
+    <section id="suppliers">
+        <div class="container">
+            <h2>Local Suppliers</h2>
+            <p class="subtitle">Real businesses in the Moncton / Dieppe area that we're connecting with. This list grows as NFG builds relationships.</p>
+
+            <!-- SUPPLIER_DATA_PLACEHOLDER -->
+
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section id="join" style="background: var(--surface);">
+        <div class="container">
+            <h2>Join the Club</h2>
+            <p class="subtitle">Membership is the engine. Your fee covers operating costs and builds the capital pool. Your savings prove the model. Your share purchase invests in the community.</p>
+            <div class="membership-grid">
+                <div class="tier">
+                    <div class="tier-name">Free Tier</div>
+                    <div class="tier-price">$0</div>
+                    <div class="tier-period">try it out</div>
+                    <ul>
+                        <li>See what's available each cycle</li>
+                        <li>Access to price comparison data</li>
+                        <li>First bulk order at member price</li>
+                        <li>No commitment</li>
+                    </ul>
+                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Start Free</a>
+                </div>
+                <div class="tier featured">
+                    <div class="tier-name">Community Member</div>
+                    <div class="tier-price">$25</div>
+                    <div class="tier-period">per year</div>
+                    <ul>
+                        <li>All bulk orders at cost + 5% margin</li>
+                        <li>Farm-direct meat & produce splitting</li>
+                        <li>Wholesale Club group runs</li>
+                        <li>Voting rights on community decisions</li>
+                        <li>Patronage dividend on annual surplus</li>
+                    </ul>
+                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Join Now</a>
+                </div>
+                <div class="tier">
+                    <div class="tier-name">Shareholder Member</div>
+                    <div class="tier-price">$25 +</div>
+                    <div class="tier-period">share purchase</div>
+                    <ul>
+                        <li>Everything in Community Member</li>
+                        <li>Buy shares that invest in local suppliers</li>
+                        <li>Voting rights on all decisions</li>
+                        <li>Capped annual return on investment</li>
+                        <li>Priority access to new business units</li>
+                    </ul>
+                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Become a Shareholder</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2>Questions</h2>
+            <p class="subtitle">The honest answers.</p>
+            <div class="faq">
+                <details class="faq-item">
+                    <summary>How is this different from Costco?</summary>
+                    <p>Costco gives you individual bulk access. NFG gives you <strong>collective purchasing power</strong> — things you literally can't do alone: splitting a quarter cow across 6 families, negotiating farm-direct produce, pooling capital to invest in local suppliers. Costco's profit goes to shareholders. NFG's surplus goes back to workers, members, and the community.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Is this a charity?</summary>
+                    <p>No. NFG is a for-profit enterprise — every business unit must be financially self-sustaining. The difference is <strong>who gets the surplus</strong>: workers (30%), community members (20%), investors capped (10%), reserves (35%), community impact (5%). Profit serves people, not the other way around.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What if a supplier won't negotiate?</summary>
+                    <p>Then NFG starts its own business unit to provide that necessity at cost. Member capital funds it. Member demand sustains it. This is Path B — and it's how NFG grows from a buying club into a network of community-owned businesses.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What do shares actually do?</summary>
+                    <p>Share purchases form NFG's capital pool. That capital is invested in local suppliers — pre-purchasing inventory, funding equipment, guaranteeing volume. In return, suppliers provide at near-cost. Shareholders earn a capped return (max 5-8% annually) and get voting rights. The capital cycles — it doesn't get extracted.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Where does my $25 membership fee go?</summary>
+                    <p>It covers operating costs (pickup logistics, admin, supplies) and builds a capital reserve. The reserve is what funds the first supplier investments. Your $25 is the seed that grows the cycle.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>When does it start?</summary>
+                    <p>Now. We're recruiting the first 5-10 members in the Moncton/Dieppe area, scouting local suppliers, and planning the first bulk order. The sooner you join, the sooner the cycle starts turning.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="logo">NFG Corp</div>
             <p>Not For Greed Corporation · New Brunswick, Canada</p>
-            <p style="margin-top:4px; font-size:0.8rem;">Building a better way to buy together.</p>
+            <p style="margin-top:4px;">Built by the 99%, for the 99%.</p>
+            <div class="links">
+                <a href="#necessities">Necessities</a>
+                <a href="#cycle">The Cycle</a>
+                <a href="#suppliers">Suppliers</a>
+                <a href="#join">Join</a>
+            </div>
+            <p style="margin-top:20px; font-size:0.8rem;">© 2026 Not For Greed Corporation. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- JOIN MODAL -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Join NFG Buying Club</h3>
+            <p>We're recruiting the first members in Moncton/Dieppe. Drop your info and we'll be in touch.</p>
+            <form id="join-form">
+                <div class="field">
+                    <label>Name</label>
+                    <input type="text" name="name" required placeholder="Your name">
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" name="email" required placeholder="you@email.com">
+                </div>
+                <div class="field">
+                    <label>Phone (optional)</label>
+                    <input type="tel" name="phone" placeholder="(506) 555-0000">
+                </div>
+                <div class="field">
+                    <label>Membership Tier</label>
+                    <select name="tier">
+                        <option value="free">Free — try it out</option>
+                        <option value="community" selected>Community Member — $25/year</option>
+                        <option value="shareholder">Shareholder Member — $25 + share purchase</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>What would you buy most? (optional)</label>
+                    <input type="text" name="interests" placeholder="e.g. meat, produce, household supplies">
+                </div>
+                <button type="submit" class="cta" style="width:100%;text-align:center;">Submit</button>
+            </form>
+        </div>
+    </div>
+
     <script>
-        document.getElementById('notify-btn').addEventListener('click', function(e) {
+        function openModal() {
+            document.getElementById('modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        document.getElementById('join-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            this.textContent = 'Thank you — we\'ll be in touch ✓';
-            this.style.background = 'var(--accent-bright)';
-            this.style.color = 'var(--bg)';
-            this.style.pointerEvents = 'none';
+            var modal = document.querySelector('.modal');
+            modal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span><h3>You\'re on the list ✓</h3><p>We\'re building the first cohort now. You\'ll hear from us within a few days with details on the first bulk order.</p>';
+            // TODO: Connect to a backend (Cloudflare Worker, Formspree, or Google Form)
         });
     </script>
 
