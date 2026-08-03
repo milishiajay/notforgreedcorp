@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not For Greed Corporation — Community-Owned Infrastructure</title>
-    <meta name="description" content="Not For Greed Corporation — a cooperative incubator building community-owned businesses across every necessity: food, transportation, energy, and beyond. Built by the 99%, for the 99%.">
+    <title>Not For Greed Corporation — Community-Owned Infrastructure, AI Back Office & Consulting</title>
+    <meta name="description" content="Not For Greed Corporation — a cooperative incubator building community-owned businesses across every necessity, plus AI back-office consulting that helps Atlantic Canada's small businesses survive, rebuild, and grow. Immigration to our towns. Development done differently.">
     <style>
         :root {
             --bg: #0a0e0a;
@@ -316,6 +316,130 @@
         .model-card p {
             font-size: 0.88rem;
             color: var(--text-dim);
+        }
+
+        /* CONSULTING */
+        .consulting {
+            background: var(--surface2);
+        }
+
+        .consult-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .consult-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 30px 26px;
+            transition: border-color 0.2s;
+        }
+
+        .consult-card:hover { border-color: var(--accent-dim); }
+
+        .consult-card .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .consult-card h3 {
+            font-size: 1.15rem;
+            color: var(--accent-bright);
+            margin-bottom: 8px;
+        }
+
+        .consult-card p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            margin-bottom: 14px;
+        }
+
+        .consult-card ul {
+            list-style: none;
+        }
+
+        .consult-card ul li {
+            font-size: 0.85rem;
+            color: var(--text-dim);
+            padding: 3px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+
+        .consult-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .rescue-strip {
+            max-width: 800px;
+            margin: 36px auto 0;
+            background: var(--surface);
+            border: 1px solid var(--accent-dim);
+            border-radius: 14px;
+            padding: 28px 30px;
+            text-align: center;
+        }
+
+        .rescue-strip h3 {
+            font-size: 1.2rem;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .rescue-strip p {
+            font-size: 0.92rem;
+            color: var(--text-dim);
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        /* TOWNS */
+        .towns-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .town-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 30px 26px;
+            transition: border-color 0.2s;
+        }
+
+        .town-card:hover { border-color: var(--accent-dim); }
+
+        .town-card .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .town-card h3 {
+            font-size: 1.15rem;
+            color: var(--accent-bright);
+            margin-bottom: 8px;
+        }
+
+        .town-card p {
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .town-card .stat {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent-bright);
+            margin-bottom: 4px;
         }
 
         /* NECESSITIES GRID */
@@ -706,8 +830,10 @@
             <div class="logo">NFG Corp</div>
             <div class="links">
                 <a href="#model">How It Works</a>
+                <a href="#consulting">Consulting</a>
                 <a href="#ventures">Ventures</a>
                 <a href="#necessities">Necessities</a>
+                <a href="#towns">Towns</a>
                 <a href="#suppliers">Suppliers</a>
                 <a href="#join">Join</a>
             </div>
@@ -720,7 +846,7 @@
             <span class="badge">Moncton · Dieppe · New Brunswick</span>
             <h1>Not For Greed <span class="highlight">Corporation</span></h1>
             <p class="tagline">
-                <strong>A cooperative incubator.</strong> We launch community-owned businesses across every necessity — food, transportation, energy, and beyond. Necessities at cost. Luxury carries profit. <strong>Built by the 99%, for the 99%.</strong>
+                <strong>A cooperative incubator and business consultancy.</strong> We launch community-owned businesses across every necessity — food, transportation, energy, and beyond — and we use AI as the back office to help Atlantic Canada's small businesses survive, rebuild, and grow. Necessities at cost. Luxury carries profit. <strong>Built by the 99%, for the 99%.</strong>
             </p>
             <a href="#ventures" class="cta">See the Ventures</a>
             <a href="#model" class="cta secondary">How It Works</a>
@@ -778,6 +904,56 @@
                     <h3>Surplus Recycles</h3>
                     <p>Profit from each venture flows back: 30% to workers, 20% to community dividends, 10% capped investor return, 35% growth reserve, 5% community impact. The cycle fuels the next venture.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTING & BACK OFFICE -->
+    <section class="consulting" id="consulting">
+        <div class="container">
+            <h2>We Help Businesses Build Back Up</h2>
+            <p class="subtitle">The co-ops need businesses behind them. That's why NFG also works as a business consultancy — using AI as the back office to help Atlantic Canada's small businesses survive, rebuild, and grow. Every business we help is a future co-op partner.</p>
+            <div class="consult-grid">
+                <div class="consult-card">
+                    <div class="icon">🤖</div>
+                    <h3>AI Back Office</h3>
+                    <p>We build and run your digital back office — so calls get answered, bookings get made, and invoices get chased, even at midnight.</p>
+                    <ul>
+                        <li>AI phone agent — answers, books, answers FAQs</li>
+                        <li>Online booking + SMS confirmations</li>
+                        <li>Invoicing and payment reminders</li>
+                        <li>Route and schedule automation</li>
+                        <li>Your data, on your terms</li>
+                    </ul>
+                </div>
+                <div class="consult-card">
+                    <div class="icon">📋</div>
+                    <h3>Business Consulting</h3>
+                    <p>A 30-minute workflow audit. We map your top manual processes and show exactly what AI can take off your plate — with real numbers.</p>
+                    <ul>
+                        <li>Free workflow audit</li>
+                        <li>Bottom-up pricing analysis</li>
+                        <li>Cost and margin transparency</li>
+                        <li>Growth planning that fits your town</li>
+                        <li>No jargon, no tech-speak</li>
+                    </ul>
+                </div>
+                <div class="consult-card">
+                    <div class="icon">🛠️</div>
+                    <h3>Rebuild & Rescue</h3>
+                    <p>Closing your doors? We help small businesses that are about to close build back up — starting with the leaks, not the dreams.</p>
+                    <ul>
+                        <li>Cash-flow triage first</li>
+                        <li>Cut the busywork overhead</li>
+                        <li>Rebuild customer systems</li>
+                        <li>Affordable monthly plans</li>
+                        <li>We succeed when you survive</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rescue-strip">
+                <h3>Businesses close every month in Atlantic Canada. Most of them didn't have to.</h3>
+                <p>Start with the free audit. Find the biggest leak. Fix it. Keep going — one quarter at a time. No lock-in, no 50-page proposals, no consultants who leave you with a binder. <a href="#join" style="color: var(--accent-bright);">Talk to us →</a></p>
             </div>
         </div>
     </section>
@@ -890,6 +1066,31 @@
                     <div class="icon">📱</div>
                     <h3>Communication</h3>
                     <p>Member-owned internet & phone co-op. Coming.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOWNS & DEVELOPMENT -->
+    <section id="towns" style="background: var(--surface);">
+        <div class="container">
+            <h2>Strong Businesses Build Strong Towns</h2>
+            <p class="subtitle">Atlantic Canada has a demographic problem — and that's an opportunity. We help small towns get the people and the development they need to thrive again.</p>
+            <div class="towns-grid">
+                <div class="town-card">
+                    <div class="icon">🌱</div>
+                    <h3>Immigration to this town</h3>
+                    <p>Newcomers are the future of Atlantic Canada. We connect the businesses we help with the workers they need — through Atlantic Canada's immigration programs, the right way, with honest processes.</p>
+                </div>
+                <div class="town-card">
+                    <div class="icon">🏘️</div>
+                    <h3>Development, done differently</h3>
+                    <p>We're looking for land and opportunities to build the kind of community we'd want to retire in: self-sufficient, solar-powered, co-operatively owned. The town comes after the businesses that can support it.</p>
+                </div>
+                <div class="town-card">
+                    <div class="icon">🤝</div>
+                    <h3>Businesses hire locally</h3>
+                    <p>Every business we consult and every co-op we launch hires from its own town first. Jobs stay. Skills stay. The money circulates where it's earned.</p>
                 </div>
             </div>
         </div>
@@ -1128,7 +1329,11 @@
             <div class="faq">
                 <details class="faq-item">
                     <summary>What exactly is NFG?</summary>
-                    <p>NFG is a <strong>cooperative incubator</strong>. We launch community-owned businesses — one for each necessity of modern life. The buying club is first (food, hygiene, household). Carshare + e-scooter is next (transportation). Then energy (heating, solar, microgrid). Then housing, communication, and beyond. Each venture is its own co-op under the NFG umbrella. Surplus from one funds the next.</p>
+                    <p>NFG is a <strong>cooperative incubator and business consultancy</strong>. We launch community-owned businesses — one for each necessity of modern life. The buying club is first (food, hygiene, household). Carshare + e-scooter is next (transportation). Then energy (heating, solar, microgrid). Then housing, communication, and beyond. Each venture is its own co-op under the NFG umbrella. Surplus from one funds the next. And alongside the co-ops, we work directly with small businesses: our AI back-office and consulting services help them survive and grow, and they become partners and suppliers in the co-op economy.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I get AI back-office or consulting help?</summary>
+                    <p>Start with a <strong>free 30-minute workflow audit</strong>. We map your top manual processes and show you exactly what AI can take off your plate — with real numbers, no obligation. From there you can choose implementation (AI phone agent, booking, invoicing, automation) with a monthly plan that fits your size. We price transparently and offer a rescue rate for businesses genuinely at risk of closing. <a href="#join" style="color: var(--accent-bright);">Tell us about your business</a>.</p>
                 </details>
                 <details class="faq-item">
                     <summary>How is this different from Costco?</summary>
@@ -1163,11 +1368,13 @@
         <div class="container">
             <div class="logo">NFG Corp</div>
             <p>Not For Greed Corporation · New Brunswick, Canada</p>
-            <p style="margin-top:4px;">A cooperative incubator. Built by the 99%, for the 99%.</p>
+            <p style="margin-top:4px;">A cooperative incubator and business consultancy. Built by the 99%, for the 99%.</p>
             <div class="links">
                 <a href="#model">How It Works</a>
+                <a href="#consulting">Consulting</a>
                 <a href="#ventures">Ventures</a>
                 <a href="#necessities">Necessities</a>
+                <a href="#towns">Towns</a>
                 <a href="#suppliers">Suppliers</a>
                 <a href="#join">Join</a>
             </div>
@@ -1204,7 +1411,7 @@
                 </div>
                 <div class="field">
                     <label>Which ventures interest you most?</label>
-                    <input type="text" name="interests" placeholder="e.g. buying club, carshare, energy, all of them">
+                    <input type="text" name="interests" placeholder="e.g. buying club, carshare, energy, AI back office for my business">
                 </div>
                 <button type="submit" class="cta" style="width:100%;text-align:center;">Submit</button>
             </form>
