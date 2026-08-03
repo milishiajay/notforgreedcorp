@@ -1275,7 +1275,7 @@
     <section id="join" style="background: var(--surface);">
         <div class="container">
             <h2>Join NFG</h2>
-            <p class="subtitle">Membership is the engine. You join for the savings. You stay for the ownership. Your fees fund the ventures. Your participation runs them.</p>
+            <p class="subtitle">Membership is <strong style="color: var(--accent-bright);">coming soon</strong>. We're finalizing the first cohort — the buying club, the consultancy, and the ventures. Leave your email and we'll tell you the moment membership opens.</p>
             <div class="membership-grid">
                 <div class="tier">
                     <div class="tier-name">Free Tier</div>
@@ -1287,7 +1287,7 @@
                         <li>First bulk order at member price</li>
                         <li>No commitment</li>
                     </ul>
-                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Start Free</a>
+                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Coming Soon</a>
                 </div>
                 <div class="tier featured">
                     <div class="tier-name">Community Member</div>
@@ -1301,7 +1301,7 @@
                         <li>Patronage dividend on annual surplus</li>
                         <li>Access to all NFG ventures (as they launch)</li>
                     </ul>
-                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Join Now</a>
+                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Coming Soon</a>
                 </div>
                 <div class="tier">
                     <div class="tier-name">Investor Member</div>
@@ -1315,7 +1315,7 @@
                         <li>Voting rights on all decisions (1 vote, regardless of shares)</li>
                         <li>Priority access to new ventures</li>
                     </ul>
-                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Become an Investor</a>
+                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Coming Soon</a>
                 </div>
             </div>
         </div>
@@ -1357,7 +1357,7 @@
                 </details>
                 <details class="faq-item">
                     <summary>When does it start?</summary>
-                    <p>Now. We're recruiting the first 5-10 members in the Moncton/Dieppe area for the buying club (Venture 1), scouting local suppliers, and planning the first bulk order. Carshare planning begins once the buying club is self-sustaining. The sooner you join, the sooner the cycle starts turning.</p>
+                    <p><strong>Membership opens soon.</strong> We're finalizing the first cohort in the Moncton/Dieppe area for the buying club (Venture 1), scouting local suppliers, and lining up the first consulting engagements. Join the waitlist and we'll contact you the moment membership opens — with early access to the buying club.</p>
                 </details>
             </div>
         </div>
@@ -1387,7 +1387,7 @@
         <div class="modal">
             <span class="close" onclick="closeModal()">&times;</span>
             <h3>Join NFG</h3>
-            <p>We're recruiting the first members in Moncton/Dieppe. Drop your info and we'll be in touch.</p>
+            <p>Membership opens soon. Drop your info and we'll contact you the moment it's live — plus early access to the buying club.</p>
             <form id="join-form">
                 <div class="field">
                     <label>Name</label>
@@ -1413,7 +1413,7 @@
                     <label>Which ventures interest you most?</label>
                     <input type="text" name="interests" placeholder="e.g. buying club, carshare, energy, AI back office for my business">
                 </div>
-                <button type="submit" class="cta" style="width:100%;text-align:center;">Submit</button>
+                <button type="submit" class="cta" style="width:100%;text-align:center;">Get notified</button>
             </form>
         </div>
     </div>
@@ -1438,7 +1438,7 @@
         document.getElementById('join-form').addEventListener('submit', function(e) {
             e.preventDefault();
             var modal = document.querySelector('.modal');
-            modal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span><h3>You\'re on the list ✓</h3><p>We\'re building the first cohort now. You\'ll hear from us within a few days with details on the first bulk order and upcoming ventures.</p>';
+            modal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span><h3>You\'re on the list ✓</h3><p>We\'re finalizing the first cohort now. You\'ll hear from us the moment membership opens — plus early access to the buying club.</p>';
             // TODO: Connect to a backend (Cloudflare Worker, Formspree, or Google Form)
         });
     </script>
