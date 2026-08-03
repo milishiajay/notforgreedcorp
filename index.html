@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not For Greed Corporation — Community-Owned Infrastructure, AI Back Office & Consulting</title>
-    <meta name="description" content="Not For Greed Corporation — a cooperative incubator building community-owned businesses across every necessity, plus AI back-office consulting that helps Atlantic Canada's small businesses survive, rebuild, and grow. Immigration to our towns. Development done differently.">
+    <title>Not For Greed Corporation — AI Back Office & Business Consulting for Atlantic Canada</title>
+    <meta name="description" content="Not For Greed Corporation helps Atlantic Canada small businesses digitize and grow. AI back office, AI phone agents, booking automation, and honest business consulting. Profit, not greed.">
+    <meta name="keywords" content="business consulting Atlantic Canada, AI back office, AI phone agent, business digitization, small business automation Moncton, rebuild business, Not For Greed Corporation">
+    <meta property="og:title" content="Not For Greed Corporation — AI Back Office & Business Consulting">
+    <meta property="og:description" content="We become your AI-powered back office and help your business digitize, survive, and grow. Free workflow audit.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://notforgreedcorp.com">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Not For Greed Corporation",
+        "description": "AI back office and business consulting for small businesses in Atlantic Canada",
+        "areaServed": ["New Brunswick", "Nova Scotia", "Prince Edward Island", "Newfoundland and Labrador"],
+        "priceRange": "$$",
+        "url": "https://notforgreedcorp.com"
+    }
+    </script>
     <style>
         :root {
             --bg: #0a0e0a;
@@ -30,7 +46,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 960px;
             margin: 0 auto;
             padding: 0 24px;
             width: 100%;
@@ -58,6 +74,7 @@
             font-size: 1.1rem;
             color: var(--accent-bright);
             letter-spacing: -0.01em;
+            text-decoration: none;
         }
 
         nav .links a {
@@ -72,7 +89,7 @@
 
         /* HERO */
         .hero {
-            padding: 100px 0 70px;
+            padding: 110px 0 80px;
             text-align: center;
         }
 
@@ -102,7 +119,7 @@
             font-size: clamp(1rem, 3vw, 1.25rem);
             color: var(--text-dim);
             margin-bottom: 36px;
-            max-width: 580px;
+            max-width: 640px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -157,7 +174,7 @@
             color: var(--text-dim);
             font-size: 1rem;
             margin-bottom: 50px;
-            max-width: 560px;
+            max-width: 620px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -168,7 +185,7 @@
         }
 
         .problem-box {
-            max-width: 680px;
+            max-width: 700px;
             margin: 0 auto;
             text-align: center;
         }
@@ -205,133 +222,20 @@
             color: var(--text-dim);
         }
 
-        /* VENTURE PIPELINE */
-        .pipeline {
-            display: grid;
-            gap: 24px;
-            max-width: 760px;
-            margin: 0 auto;
-        }
-
-        .venture-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px 28px;
-            display: grid;
-            grid-template-columns: 64px 1fr;
-            gap: 20px;
-            align-items: start;
-            transition: border-color 0.2s;
-        }
-
-        .venture-card:hover { border-color: var(--accent-dim); }
-
-        .venture-card.active { border-color: var(--accent); }
-        .venture-card.next { border-color: var(--warn); opacity: 0.95; }
-
-        .venture-icon {
-            font-size: 2.4rem;
-            text-align: center;
-            line-height: 1;
-            padding-top: 4px;
-        }
-
-        .venture-status {
-            display: inline-block;
-            padding: 3px 12px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-        }
-
-        .venture-status.live {
-            background: var(--accent);
-            color: white;
-        }
-
-        .venture-status.next {
-            background: rgba(233, 196, 106, 0.15);
-            color: var(--warn);
-        }
-
-        .venture-status.future {
-            background: var(--surface2);
-            color: var(--text-dim);
-            border: 1px solid var(--border);
-        }
-
-        .venture-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 6px;
-            color: var(--text);
-        }
-
-        .venture-card .venture-desc {
-            font-size: 0.92rem;
-            color: var(--text-dim);
-            margin-bottom: 12px;
-        }
-
-        .venture-card .venture-details {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-        }
-
-        .venture-card .venture-details strong {
-            color: var(--accent-bright);
-        }
-
-        /* THE MODEL */
-        .model-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 24px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .model-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 28px 24px;
-            text-align: center;
-        }
-
-        .model-card .icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .model-card h3 {
-            font-size: 1.1rem;
-            color: var(--accent-bright);
-            margin-bottom: 8px;
-        }
-
-        .model-card p {
-            font-size: 0.88rem;
-            color: var(--text-dim);
-        }
-
-        /* CONSULTING */
-        .consulting {
+        /* SERVICES */
+        .services {
             background: var(--surface2);
         }
 
-        .consult-grid {
+        .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
             max-width: 900px;
             margin: 0 auto;
         }
 
-        .consult-card {
+        .service-card {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 14px;
@@ -339,30 +243,30 @@
             transition: border-color 0.2s;
         }
 
-        .consult-card:hover { border-color: var(--accent-dim); }
+        .service-card:hover { border-color: var(--accent-dim); }
 
-        .consult-card .icon {
+        .service-card .icon {
             font-size: 2rem;
             margin-bottom: 12px;
         }
 
-        .consult-card h3 {
+        .service-card h3 {
             font-size: 1.15rem;
             color: var(--accent-bright);
             margin-bottom: 8px;
         }
 
-        .consult-card p {
+        .service-card p {
             font-size: 0.9rem;
             color: var(--text-dim);
             margin-bottom: 14px;
         }
 
-        .consult-card ul {
+        .service-card ul {
             list-style: none;
         }
 
-        .consult-card ul li {
+        .service-card ul li {
             font-size: 0.85rem;
             color: var(--text-dim);
             padding: 3px 0;
@@ -370,140 +274,34 @@
             position: relative;
         }
 
-        .consult-card ul li::before {
+        .service-card ul li::before {
             content: '✓';
             position: absolute;
             left: 0;
             color: var(--accent);
         }
 
-        .rescue-strip {
-            max-width: 800px;
-            margin: 36px auto 0;
-            background: var(--surface);
-            border: 1px solid var(--accent-dim);
-            border-radius: 14px;
-            padding: 28px 30px;
-            text-align: center;
-        }
-
-        .rescue-strip h3 {
-            font-size: 1.2rem;
-            color: var(--text);
-            margin-bottom: 8px;
-        }
-
-        .rescue-strip p {
-            font-size: 0.92rem;
-            color: var(--text-dim);
-            max-width: 560px;
-            margin: 0 auto;
-        }
-
-        /* TOWNS */
-        .towns-grid {
+        /* HOW WE WORK */
+        .steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 24px;
-            max-width: 900px;
+            max-width: 880px;
             margin: 0 auto;
         }
 
-        .town-card {
+        .step {
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 14px;
-            padding: 30px 26px;
-            transition: border-color 0.2s;
-        }
-
-        .town-card:hover { border-color: var(--accent-dim); }
-
-        .town-card .icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .town-card h3 {
-            font-size: 1.15rem;
-            color: var(--accent-bright);
-            margin-bottom: 8px;
-        }
-
-        .town-card p {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .town-card .stat {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: var(--accent-bright);
-            margin-bottom: 4px;
-        }
-
-        /* NECESSITIES GRID */
-        .necessity-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .necessity-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 28px 20px;
-            transition: all 0.2s ease;
+            padding: 28px 24px;
             text-align: center;
         }
 
-        .necessity-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-        }
-
-        .necessity-card .icon {
-            font-size: 2.2rem;
-            margin-bottom: 14px;
-        }
-
-        .necessity-card h3 {
-            font-size: 1.05rem;
-            color: var(--accent-bright);
-            margin-bottom: 6px;
-        }
-
-        .necessity-card p {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-        }
-
-        /* THE CYCLE */
-        .cycle {
-            background: var(--surface);
-        }
-
-        .cycle-diagram {
-            max-width: 700px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .cycle-step {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            padding: 20px 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .cycle-step:last-child { border-bottom: none; }
-
-        .cycle-step .num {
-            flex-shrink: 0;
-            width: 40px;
-            height: 40px;
+        .step .num {
+            width: 44px;
+            height: 44px;
+            margin: 0 auto 14px;
             background: var(--accent);
             color: white;
             border-radius: 50%;
@@ -511,203 +309,144 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.05rem;
         }
 
-        .cycle-step .content h3 {
-            font-size: 1.1rem;
-            margin-bottom: 4px;
-            color: var(--text);
-        }
-
-        .cycle-step .content p {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-        }
-
-        .cycle-arrow {
-            text-align: center;
-            color: var(--accent);
-            font-size: 1.2rem;
-            padding: 4px 0;
-        }
-
-        .cycle-loop {
-            text-align: center;
-            margin-top: 24px;
-            padding: 16px;
-            background: var(--surface2);
-            border-radius: 12px;
-            border: 1px solid var(--accent-dim);
-        }
-
-        .cycle-loop p {
-            color: var(--accent-bright);
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        /* SUPPLIERS */
-        .supplier-section {
-            margin-bottom: 40px;
-        }
-
-        .supplier-section h3 {
-            font-size: 1.2rem;
+        .step h3 {
+            font-size: 1.05rem;
             color: var(--accent-bright);
             margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
-        .supplier-section .desc {
-            font-size: 0.9rem;
+        .step p {
+            font-size: 0.88rem;
             color: var(--text-dim);
-            margin-bottom: 16px;
         }
 
-        .supplier-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 14px;
-        }
-
-        .supplier-card {
+        /* PHILOSOPHY */
+        .philosophy-box {
+            max-width: 720px;
+            margin: 0 auto;
             background: var(--surface);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 16px 18px;
-            transition: border-color 0.2s;
+            border-radius: 14px;
+            padding: 36px 32px;
         }
 
-        .supplier-card:hover { border-color: var(--accent-dim); }
+        .philosophy-box ul {
+            list-style: none;
+        }
 
-        .supplier-card .name {
-            font-weight: 600;
+        .philosophy-box li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
             font-size: 0.95rem;
-            margin-bottom: 4px;
         }
 
-        .supplier-card .type {
-            display: inline-block;
-            font-size: 0.75rem;
+        .philosophy-box li:last-child { border-bottom: none; }
+
+        .philosophy-box li::before {
+            content: '◆';
             color: var(--accent-bright);
-            background: var(--accent-dim);
-            padding: 2px 8px;
-            border-radius: 4px;
-            margin-bottom: 8px;
+            font-weight: 700;
+            flex-shrink: 0;
         }
 
-        .supplier-card .info {
-            font-size: 0.83rem;
+        /* CONTACT */
+        .contact {
+            background: var(--surface);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 860px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        @media (max-width: 700px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+
+        .contact-form {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 32px;
+        }
+
+        .contact-form label {
+            display: block;
+            font-size: 0.85rem;
             color: var(--text-dim);
+            margin: 14px 0 4px;
         }
 
-        .supplier-card .info a {
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px 14px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 0.95rem;
+            font-family: inherit;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .contact-form textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .contact-form .cta {
+            margin-top: 18px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-info p {
+            color: var(--text-dim);
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info .direct {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 8px 0;
+            font-weight: 600;
+        }
+
+        .contact-info .direct a {
             color: var(--accent-bright);
             text-decoration: none;
         }
 
-        .supplier-card .info a:hover { text-decoration: underline; }
+        .contact-info .direct a:hover { text-decoration: underline; }
 
-        /* MEMBERSHIP */
-        .membership-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 20px;
-            max-width: 760px;
-            margin: 0 auto;
-        }
-
-        .tier {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 28px 24px;
-            text-align: center;
-        }
-
-        .tier.featured {
-            border-color: var(--accent);
-        }
-
-        .tier .tier-name {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--accent-bright);
-            margin-bottom: 8px;
-        }
-
-        .tier .tier-price {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-
-        .tier .tier-period {
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            margin-bottom: 16px;
-        }
-
-        .tier ul {
-            list-style: none;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-
-        .tier ul li {
-            font-size: 0.88rem;
-            color: var(--text-dim);
-            padding: 4px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .tier ul li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-
-        /* FAQ */
-        .faq {
-            max-width: 680px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid var(--border);
-            padding: 18px 0;
-        }
-
-        .faq-item summary {
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-item summary::after {
-            content: '+';
-            font-size: 1.3rem;
-            color: var(--accent);
-            transition: transform 0.2s;
-        }
-
-        .faq-item[open] summary::after {
-            transform: rotate(45deg);
-        }
-
-        .faq-item p {
+        #formStatus {
             margin-top: 12px;
-            font-size: 0.92rem;
+            font-size: 0.9rem;
             color: var(--text-dim);
+            text-align: center;
         }
 
         /* FOOTER */
@@ -743,82 +482,9 @@
 
         footer .links a:hover { color: var(--accent-bright); }
 
-        /* MODAL */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.7);
-            z-index: 200;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .modal-overlay.active { display: flex; }
-
-        .modal {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 440px;
-            width: 100%;
-        }
-
-        .modal h3 {
-            font-size: 1.3rem;
-            margin-bottom: 8px;
-        }
-
-        .modal p {
-            font-size: 0.9rem;
-            color: var(--text-dim);
-            margin-bottom: 24px;
-        }
-
-        .modal .field {
-            margin-bottom: 16px;
-        }
-
-        .modal label {
-            display: block;
-            font-size: 0.85rem;
-            color: var(--text-dim);
-            margin-bottom: 4px;
-        }
-
-        .modal input, .modal select {
-            width: 100%;
-            padding: 10px 14px;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            color: var(--text);
-            font-size: 0.95rem;
-            font-family: inherit;
-        }
-
-        .modal input:focus, .modal select:focus {
-            outline: none;
-            border-color: var(--accent);
-        }
-
-        .modal .close {
-            float: right;
-            cursor: pointer;
-            color: var(--text-dim);
-            font-size: 1.3rem;
-        }
-
-        .modal .close:hover { color: var(--text); }
-
         @media (max-width: 700px) {
-            .pipeline { grid-template-columns: 1fr; }
-            .venture-card { grid-template-columns: 1fr; }
-            .venture-icon { text-align: left; }
-            nav .links a { margin-left: 14px; font-size: 0.85rem; }
             .cta.secondary { margin-left: 0; margin-top: 12px; }
+            nav .links a { margin-left: 14px; font-size: 0.85rem; }
         }
     </style>
 </head>
@@ -827,29 +493,26 @@
     <!-- NAV -->
     <nav>
         <div class="container">
-            <div class="logo">NFG Corp</div>
+            <a class="logo" href="#top">NFG Corp</a>
             <div class="links">
-                <a href="#model">How It Works</a>
-                <a href="#consulting">Consulting</a>
-                <a href="#ventures">Ventures</a>
-                <a href="#necessities">Necessities</a>
-                <a href="#towns">Towns</a>
-                <a href="#suppliers">Suppliers</a>
-                <a href="#join">Join</a>
+                <a href="#services">Services</a>
+                <a href="#process">How We Work</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero" style="border-top: none;">
+    <section class="hero" id="top" style="border-top: none;">
         <div class="container">
-            <span class="badge">Moncton · Dieppe · New Brunswick</span>
-            <h1>Not For Greed <span class="highlight">Corporation</span></h1>
+            <span class="badge">Moncton · New Brunswick · Atlantic Canada</span>
+            <h1>Your business deserves a<br><span class="highlight">fighting chance.</span></h1>
             <p class="tagline">
-                <strong>A cooperative incubator and business consultancy.</strong> We launch community-owned businesses across every necessity — food, transportation, energy, and beyond — and we use AI as the back office to help Atlantic Canada's small businesses survive, rebuild, and grow. Necessities at cost. Luxury carries profit. <strong>Built by the 99%, for the 99%.</strong>
+                <strong>Not For Greed Corporation</strong> is the AI-powered back office and consulting partner for Atlantic Canada's small businesses. We digitize your operations, automate the busywork, and help you rebuild — so you can get back to running your business.
             </p>
-            <a href="#ventures" class="cta">See the Ventures</a>
-            <a href="#model" class="cta secondary">How It Works</a>
+            <a href="#contact" class="cta">Get your free workflow audit</a>
+            <a href="#services" class="cta secondary">See how we work</a>
         </div>
     </section>
 
@@ -857,67 +520,38 @@
     <section class="problem" id="problem">
         <div class="container">
             <div class="problem-box">
-                <p>Every necessity of modern life — food, heat, getting to work, staying connected — is controlled by companies that <strong>profit off your need to survive</strong>.</p>
-                <p>The groceries you need carry a <strong>25-40% markup</strong>. The car you need to get to work costs <strong>$9,000+/year to own</strong>. The power that heats your home is a <strong>profit center for shareholders</strong>.</p>
-                <p>What if we built all of that — <strong>owned by the people who use it</strong>?</p>
+                <p>Small businesses don't fail because the owner can't do the work. <strong>They fail because there aren't enough hours</strong> to do the work <em>and</em> the paperwork.</p>
+                <p>Missed calls become missed customers. Chasing invoices eats your evenings. Booking chaos scares away repeat clients. The busywork is quietly killing the business you built.</p>
+                <p>What if the busywork <strong>just did itself</strong>?</p>
                 <div class="stat-row">
                     <div class="stat">
-                        <span class="num">25-40%</span>
-                        <span class="label">Grocery markup on basics</span>
+                        <span class="num">70%+</span>
+                        <span class="label">of calls to small businesses go unanswered</span>
                     </div>
                     <div class="stat">
-                        <span class="num">$9,000+</span>
-                        <span class="label">Annual cost of car ownership</span>
+                        <span class="num">11 hrs</span>
+                        <span class="label">per week owners spend on admin, not customers</span>
                     </div>
                     <div class="stat">
-                        <span class="num">200:1</span>
-                        <span class="label">CEO-to-worker pay ratio (avg)</span>
+                        <span class="num">$0</span>
+                        <span class="label">cost for your first workflow audit</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- THE MODEL -->
-    <section id="model">
+    <!-- SERVICES -->
+    <section class="services" id="services">
         <div class="container">
-            <h2>How It Works</h2>
-            <p class="subtitle">NFG isn't a single business. It's an incubator that launches community-owned cooperatives — one for each sector where greed currently extracts from people.</p>
-            <div class="model-grid">
-                <div class="model-card">
-                    <div class="icon">🌱</div>
-                    <h3>Identify the Need</h3>
-                    <p>Every necessity of modern life is a target. Food, transport, energy, housing, communication — anything people need to survive and participate.</p>
-                </div>
-                <div class="model-card">
-                    <div class="icon">🤝</div>
-                    <h3>Pilot & Prove</h3>
-                    <p>Start small with the community. Bulk buying club, group carshare, shared solar — prove the model works before scaling. Member capital funds it.</p>
-                </div>
-                <div class="model-card">
-                    <div class="icon">🏗️</div>
-                    <h3>Incorporate as Co-op</h3>
-                    <p>Once a pilot is self-sustaining, it becomes its own cooperative business unit under the NFG umbrella. Workers, members, and investors each have a seat.</p>
-                </div>
-                <div class="model-card">
-                    <div class="icon">↻</div>
-                    <h3>Surplus Recycles</h3>
-                    <p>Profit from each venture flows back: 30% to workers, 20% to community dividends, 10% capped investor return, 35% growth reserve, 5% community impact. The cycle fuels the next venture.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2>What We Do</h2>
+            <p class="subtitle">We become the back office your business can't afford to hire — powered by AI, priced like a neighbour, not a corporation.</p>
+            <div class="service-grid">
 
-    <!-- CONSULTING & BACK OFFICE -->
-    <section class="consulting" id="consulting">
-        <div class="container">
-            <h2>We Help Businesses Build Back Up</h2>
-            <p class="subtitle">The co-ops need businesses behind them. That's why NFG also works as a business consultancy — using AI as the back office to help Atlantic Canada's small businesses survive, rebuild, and grow. Every business we help is a future co-op partner.</p>
-            <div class="consult-grid">
-                <div class="consult-card">
+                <div class="service-card">
                     <div class="icon">🤖</div>
                     <h3>AI Back Office</h3>
-                    <p>We build and run your digital back office — so calls get answered, bookings get made, and invoices get chased, even at midnight.</p>
+                    <p>We build and run your digital back office, so calls get answered, bookings get made, and invoices get chased — even at midnight.</p>
                     <ul>
                         <li>AI phone agent — answers, books, answers FAQs</li>
                         <li>Online booking + SMS confirmations</li>
@@ -926,19 +560,34 @@
                         <li>Your data, on your terms</li>
                     </ul>
                 </div>
-                <div class="consult-card">
+
+                <div class="service-card">
+                    <div class="icon">💻</div>
+                    <h3>AI Digitization</h3>
+                    <p>We bring your business online and automate the manual processes eating your week — starting with what costs you the most time.</p>
+                    <ul>
+                        <li>Website + online booking that works</li>
+                        <li>Automated customer follow-ups</li>
+                        <li>Digital forms and records</li>
+                        <li>AI-assisted quoting and estimates</li>
+                        <li>No jargon, no tech-speak</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
                     <div class="icon">📋</div>
                     <h3>Business Consulting</h3>
-                    <p>A 30-minute workflow audit. We map your top manual processes and show exactly what AI can take off your plate — with real numbers.</p>
+                    <p>A 30-minute workflow audit. We map your top manual processes and show you exactly what AI can take off your plate — with real numbers.</p>
                     <ul>
                         <li>Free workflow audit</li>
                         <li>Bottom-up pricing analysis</li>
                         <li>Cost and margin transparency</li>
                         <li>Growth planning that fits your town</li>
-                        <li>No jargon, no tech-speak</li>
+                        <li>Honest, direct recommendations</li>
                     </ul>
                 </div>
-                <div class="consult-card">
+
+                <div class="service-card">
                     <div class="icon">🛠️</div>
                     <h3>Rebuild & Rescue</h3>
                     <p>Closing your doors? We help small businesses that are about to close build back up — starting with the leaks, not the dreams.</p>
@@ -950,415 +599,87 @@
                         <li>We succeed when you survive</li>
                     </ul>
                 </div>
-            </div>
-            <div class="rescue-strip">
-                <h3>Businesses close every month in Atlantic Canada. Most of them didn't have to.</h3>
-                <p>Start with the free audit. Find the biggest leak. Fix it. Keep going — one quarter at a time. No lock-in, no 50-page proposals, no consultants who leave you with a binder. <a href="#join" style="color: var(--accent-bright);">Talk to us →</a></p>
-            </div>
-        </div>
-    </section>
-
-    <!-- VENTURE PIPELINE -->
-    <section id="ventures" style="background: var(--surface);">
-        <div class="container">
-            <h2>The Venture Pipeline</h2>
-            <p class="subtitle">Each venture targets one necessity. They launch in sequence — each one's surplus helps fund the next. This isn't a buying club with a wishlist. It's a roadmap to community ownership of everything you need.</p>
-            <div class="pipeline">
-
-                <!-- VENTURE 1: BUYING CLUB -->
-                <div class="venture-card active">
-                    <div class="venture-icon">🛒</div>
-                    <div>
-                        <span class="venture-status next">◐ Coming Soon</span>
-                        <h3>Venture 1: NFG Buying Club</h3>
-                        <p class="venture-desc">The pilot. Members pool purchasing power for food, hygiene, and household necessities. Bulk orders, farm-direct meat splitting, wholesale group runs. Necessities at cost — no markup.</p>
-                        <div class="venture-details">
-                            <strong>Status:</strong> Recruiting first 5-10 members · <strong>Capital needed:</strong> $500 · <strong>Model:</strong> $99/yr membership + optional $500 investor shares · <strong>Savings:</strong> 25-50% on necessities
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VENTURE 2: CARSHARE + E-SCOOTER -->
-                <div class="venture-card next">
-                    <div class="venture-icon">🚗</div>
-                    <div>
-                        <span class="venture-status next">◐ Next Up — Planning</span>
-                        <h3>Venture 2: NFG CarShare + E-Scooter</h3>
-                        <p class="venture-desc">A community-owned carshare and e-scooter program — like Modo, but owned by the people who use it. Book a car by the hour for groceries, appointments, errands. Grab an e-scooter for short trips. No private equity, no surge pricing, no extraction.</p>
-                        <div class="venture-details">
-                            <strong>Inspired by:</strong> Modo Co-op (BC) · <strong>Target:</strong> 1-2 shared vehicles + e-scooter fleet in Moncton/Dieppe · <strong>Cost to members:</strong> Pay-per-trip + small monthly · <strong>Why:</strong> Car ownership costs $9,000+/yr — most households need a car 5% of the time. The other 95% is wasted capital.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VENTURE 3: ENERGY / GRID -->
-                <div class="venture-card">
-                    <div class="venture-icon">⚡</div>
-                    <div>
-                        <span class="venture-status future">○ Future — Phase 3</span>
-                        <h3>Venture 3: NFG Energy</h3>
-                        <p class="venture-desc">Community-owned energy. Start with group buying of heating oil/propane at bulk rates. Scale to shared solar installations, battery storage, and eventually a community microgrid. Keep warm without funding shareholders.</p>
-                        <div class="venture-details">
-                            <strong>Phases:</strong> (1) Group heating oil/propane purchasing → (2) Community solar + battery storage → (3) Microgrid · <strong>Why:</strong> NB Power rates keep rising. Solar is cheaper than ever. Community-owned means the savings stay local.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- VENTURE 4+: FUTURE -->
-                <div class="venture-card">
-                    <div class="venture-icon">🔮</div>
-                    <div>
-                        <span class="venture-status future">○ Future — Pipeline</span>
-                        <h3>Venture 4+: Housing, Communication, Clothing...</h3>
-                        <p class="venture-desc">Every necessity is a future venture. Community land trust for affordable housing. Member-owned internet/phone co-op. Bulk clothing and basics. The pipeline doesn't stop until every thing you need to survive is owned by the community that uses it.</p>
-                        <div class="venture-details">
-                            <strong>Principle:</strong> If people need it to live with dignity, NFG will build a co-op for it. <strong>Each venture</strong> funds the next through the surplus waterfall.
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
     </section>
 
-    <!-- NECESSITIES -->
-    <section id="necessities">
+    <!-- HOW WE WORK -->
+    <section id="process">
         <div class="container">
-            <h2>The Necessities</h2>
-            <p class="subtitle">These are the things every human needs to survive and live with dignity. They should flow at cost — no one should profit off someone's need to eat, stay warm, or get to work. Each one is a future NFG venture.</p>
-            <div class="necessity-grid">
-                <div class="necessity-card">
-                    <div class="icon">🍞</div>
-                    <h3>Food</h3>
-                    <p>Venture 1 — Buying Club. Staples, fresh produce, protein, dairy.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">💧</div>
-                    <h3>Water</h3>
-                    <p>Clean drinking water. Accessible to all, always.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">🏠</div>
-                    <h3>Shelter</h3>
-                    <p>Community land trust. Housing as a right, not an investment.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">⚡</div>
-                    <h3>Energy</h3>
-                    <p>Venture 3 — NFG Energy. Heating, electricity, community solar.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">🧼</div>
-                    <h3>Hygiene & Health</h3>
-                    <p>Venture 1 — bulk hygiene at cost. Soap, medicine, menstrual products.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">👕</div>
-                    <h3>Clothing</h3>
-                    <p>Basic, durable essentials. Not fashion — function.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">🚗</div>
-                    <h3>Transportation</h3>
-                    <p>Venture 2 — CarShare + E-Scooter. Mobility without car ownership.</p>
-                </div>
-                <div class="necessity-card">
-                    <div class="icon">📱</div>
-                    <h3>Communication</h3>
-                    <p>Member-owned internet & phone co-op. Coming.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TOWNS & DEVELOPMENT -->
-    <section id="towns" style="background: var(--surface);">
-        <div class="container">
-            <h2>Strong Businesses Build Strong Towns</h2>
-            <p class="subtitle">Atlantic Canada has a demographic problem — and that's an opportunity. We help small towns get the people and the development they need to thrive again.</p>
-            <div class="towns-grid">
-                <div class="town-card">
-                    <div class="icon">🌱</div>
-                    <h3>Immigration to this town</h3>
-                    <p>Newcomers are the future of Atlantic Canada. We connect the businesses we help with the workers they need — through Atlantic Canada's immigration programs, the right way, with honest processes.</p>
-                </div>
-                <div class="town-card">
-                    <div class="icon">🏘️</div>
-                    <h3>Development, done differently</h3>
-                    <p>We're looking for land and opportunities to build the kind of community we'd want to retire in: self-sufficient, solar-powered, co-operatively owned. The town comes after the businesses that can support it.</p>
-                </div>
-                <div class="town-card">
-                    <div class="icon">🤝</div>
-                    <h3>Businesses hire locally</h3>
-                    <p>Every business we consult and every co-op we launch hires from its own town first. Jobs stay. Skills stay. The money circulates where it's earned.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- THE CYCLE -->
-    <section class="cycle" id="cycle">
-        <div class="container">
-            <h2>The Cycle</h2>
-            <p class="subtitle">Each venture launches, proves the model, and generates surplus. That surplus funds the next venture. The cycle doesn't stop until every necessity is community-owned.</p>
-            <div class="cycle-diagram">
-                <div class="cycle-step">
+            <h2>How We Work</h2>
+            <p class="subtitle">No lock-in, no 50-page proposals, no consultants who leave you with a binder. We find the biggest leak, fix it, and keep going — one quarter at a time.</p>
+            <div class="steps">
+                <div class="step">
                     <div class="num">1</div>
-                    <div class="content">
-                        <h3>Pilot Venture Launches</h3>
-                        <p>Members join, pay annual fee, and optionally buy shares. Capital pool funds the first venture — starting with the buying club.</p>
-                    </div>
+                    <h3>Free Workflow Audit</h3>
+                    <p>30 minutes. We map your top manual processes and show you where the hours go.</p>
                 </div>
-                <div class="cycle-arrow">↓</div>
-                <div class="cycle-step">
+                <div class="step">
                     <div class="num">2</div>
-                    <div class="content">
-                        <h3>Members Get Real Savings</h3>
-                        <p>The venture provides a necessity at cost. Food at 25-50% less. Carshare at a fraction of ownership. Heating at bulk rates. The savings prove the model.</p>
-                    </div>
+                    <h3>Find the Leaks</h3>
+                    <p>Missed calls, unpaid invoices, double-booked days. We quantify exactly what it's costing you.</p>
                 </div>
-                <div class="cycle-arrow">↓</div>
-                <div class="cycle-step">
+                <div class="step">
                     <div class="num">3</div>
-                    <div class="content">
-                        <h3>Savings Attract More Members</h3>
-                        <p>Word spreads. More people join for the savings. More members = more capital = more leverage with suppliers = lower costs.</p>
-                    </div>
+                    <h3>AI Takes the Busywork</h3>
+                    <p>We digitize and automate — starting with the highest-cost process, with real numbers in the proposal.</p>
                 </div>
-                <div class="cycle-arrow">↓</div>
-                <div class="cycle-step">
+                <div class="step">
                     <div class="num">4</div>
-                    <div class="content">
-                        <h3>Surplus Funds the Next Venture</h3>
-                        <p>When a venture is self-sustaining, its surplus doesn't go to shareholders. It funds the next venture in the pipeline — carshare, then energy, then housing.</p>
-                    </div>
-                </div>
-                <div class="cycle-arrow">↓</div>
-                <div class="cycle-step">
-                    <div class="num">5</div>
-                    <div class="content">
-                        <h3>Workers, Community, and Investors Share</h3>
-                        <p>30% worker profit share, 20% community dividends, 10% capped investor return, 35% growth reserve, 5% community impact. Everyone wins — not just the top.</p>
-                    </div>
-                </div>
-                <div class="cycle-loop">
-                    <p>↻ The cycle repeats. Each venture strengthens the next. The community owns more of what it needs. Less money extracts to shareholders. More stays home.</p>
+                    <h3>Rebuild & Grow</h3>
+                    <p>Your business gets its hours back. We stay on as your affordable back office, month after month.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SUPPLIERS -->
-    <section id="suppliers">
+    <!-- PHILOSOPHY -->
+    <section id="philosophy" style="background: var(--surface);">
         <div class="container">
-            <h2>Current Suppliers — Buying Club</h2>
-            <p class="subtitle">Real businesses in the Moncton / Dieppe area that the buying club (Venture 1) is connecting with. This list grows as NFG builds relationships.</p>
-
-            <!-- FOOD — FARMS -->
-            <div class="supplier-section">
-                <h3>🌾 Food — Local Farms</h3>
-                <p class="desc">Direct-from-farm purchasing. Bulk meat splitting, seasonal produce, farm-gate pricing.</p>
-                <div class="supplier-list">
-                    <div class="supplier-card">
-                        <div class="name">Boudreau Meat Market</div>
-                        <span class="type">Farm / Butcher</span>
-                        <div class="info">Local beef, chicken, pork, lamb, eggs, Halal selection. Free delivery over $45.<br>1640 Rue Principale, Memramcook · <a href="https://boudreaumeat.ca" target="_blank">boudreaumeat.ca</a> · (506) 758-2992</div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Spring Brook Farms</div>
-                        <span class="type">Farm</span>
-                        <div class="info">Grass-fed beef, pasture-raised chicken, apple-finished pork, eggs. No GMOs/hormones.<br>South Branch, NB · <a href="https://springbrookfarms.ca" target="_blank">springbrookfarms.ca</a> · (506) 523-6432</div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Memramcook Valley Farms</div>
-                        <span class="type">Farm</span>
-                        <div class="info">100% grass-fed beef, hormone/antibiotic-free. 3rd generation, since 1938.<br>1569 Principale, Memramcook · <a href="https://grassfednb.ca" target="_blank">grassfednb.ca</a></div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Stirling Fruit Farms</div>
-                        <span class="type">Farm / Retailer</span>
-                        <div class="info">Fresh fruits, vegetables, frozen meats, baked goods. Farm market open 7 days/week.<br>840 Shediac Rd, Moncton · (506) 856-8281</div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Hardy's Produce</div>
-                        <span class="type">Farm / Retailer</span>
-                        <div class="info">Seasonal vegetables, fresh produce. Family-owned.<br>Cap-Pelé farm · retail at 1063 Mount Rd, Moncton area</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOOD — WHOLESALE -->
-            <div class="supplier-section">
-                <h3>📦 Food — Wholesale & Bulk</h3>
-                <p class="desc">Bulk purchasing power. Restaurant-grade quantities at wholesale prices.</p>
-                <div class="supplier-list">
-                    <div class="supplier-card">
-                        <div class="name">Sysco Moncton</div>
-                        <span class="type">Wholesaler / Distributor</span>
-                        <div class="info">Full-service food distributor — bulk staples, produce, meat, dairy, frozen.<br>460 MacNaughton Ave, Moncton · <a href="https://sysco.ca/location/moncton" target="_blank">sysco.ca</a> · (506) 857-8115</div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Wholesale Club (Loblaw)</div>
-                        <span class="type">Wholesaler / Retailer</span>
-                        <div class="info">Bulk groceries, meat, produce, dairy, janitorial supplies. No membership required.<br>520 St George Blvd, Moncton</div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">UNIPCO Purchasing Program</div>
-                        <span class="type">Buying Group</span>
-                        <div class="info">100% member-owned foodservice buying group. $120M+ purchasing power. Rebates to members.<br>860 Main St, Moncton · 1-877-857-9625 · <a href="https://unipco.com" target="_blank">unipco.com</a></div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Bulk Barn (Dieppe)</div>
-                        <span class="type">Bulk Retailer</span>
-                        <div class="info">Bulk grains, flours, spices, nuts, dried fruit, snacks.<br>18 Champlain St, Dieppe · <a href="https://bulkbarn.ca" target="_blank">bulkbarn.ca</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOOD — CO-OPS & MARKETS -->
-            <div class="supplier-section">
-                <h3>🤝 Food — Co-ops & Markets</h3>
-                <p class="desc">Existing community food networks and farmers' markets.</p>
-                <div class="supplier-list">
-                    <div class="supplier-card">
-                        <div class="name">Community Food Smart</div>
-                        <span class="type">Buying Club</span>
-                        <div class="info">Bulk produce buying club — affordable fruits & vegetables from local farmers. Monthly food bag.<br>Various NB pickup locations · <a href="https://communityfoodsmart.ca" target="_blank">communityfoodsmart.ca</a></div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Really Local Harvest</div>
-                        <span class="type">Co-op / Network</span>
-                        <div class="info">Local food network connecting consumers with SE NB farms.<br>Dieppe Market area · <a href="https://recoltedecheznous.com" target="_blank">recoltedecheznous.com</a></div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Moncton Market</div>
-                        <span class="type">Farmers' Market</span>
-                        <div class="info">100+ Atlantic Canadian growers, producers, artisans under one roof.<br>Downtown Moncton · <a href="https://marchemonctonmarket.ca" target="_blank">marchemonctonmarket.ca</a></div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Buy Local NB</div>
-                        <span class="type">Directory</span>
-                        <div class="info">Comprehensive directory of local NB farms and food products.<br>Province-wide · <a href="https://buylocalnb.ca" target="_blank">buylocalnb.ca</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- HYGIENE & HEALTH -->
-            <div class="supplier-section">
-                <h3>🧼 Hygiene & Health</h3>
-                <p class="desc">Soap, toothpaste, menstrual products, basic medicine, first aid. Dignity in bulk.</p>
-                <div class="supplier-list">
-                    <div class="supplier-card">
-                        <div class="name">FCS Wholesale Supplies</div>
-                        <span class="type">Wholesaler / Distributor</span>
-                        <div class="info">Eco-friendly cleaning chemicals, janitorial/hygiene supplies. Delivers across NB.<br>Serves Moncton · <a href="https://fcswholesalesupplies.ca" target="_blank">fcswholesalesupplies.ca</a></div>
-                    </div>
-                    <div class="supplier-card">
-                        <div class="name">Bargains Group</div>
-                        <span class="type">Wholesaler (Online)</span>
-                        <div class="info">Wholesale hygiene kits — soap, deodorant, oral care, feminine hygiene in bulk. Ships to NB.<br><a href="https://bargainsgroup.com" target="_blank">bargainsgroup.com</a></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NOTE -->
-            <div style="margin-top: 40px; padding: 20px; background: var(--surface2); border-radius: 12px; border: 1px solid var(--accent-dim);">
-                <p style="color: var(--text-dim); font-size: 0.88rem; text-align: center;">
-                    <strong style="color: var(--accent-bright);">Note:</strong> This is a living list. We're actively reaching out to these suppliers to negotiate near-cost pricing for NFG members. Know a local supplier we should add? <a href="#join" style="color: var(--accent-bright);">Tell us</a>.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- MEMBERSHIP -->
-    <section id="join" style="background: var(--surface);">
-        <div class="container">
-            <h2>Join NFG</h2>
-            <p class="subtitle">Membership is <strong style="color: var(--accent-bright);">coming soon</strong>. We're finalizing the first cohort — the buying club, the consultancy, and the ventures. Leave your email and we'll tell you the moment membership opens.</p>
-            <div class="membership-grid">
-                <div class="tier">
-                    <div class="tier-name">Free Tier</div>
-                    <div class="tier-price">$0</div>
-                    <div class="tier-period">try it out</div>
-                    <ul>
-                        <li>See what's available each cycle</li>
-                        <li>Access to price comparison data</li>
-                        <li>First bulk order at member price</li>
-                        <li>No commitment</li>
-                    </ul>
-                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Coming Soon</a>
-                </div>
-                <div class="tier featured">
-                    <div class="tier-name">Community Member</div>
-                    <div class="tier-price">$99/yr</div>
-                    <div class="tier-period">annual membership</div>
-                    <ul>
-                        <li>All bulk orders at cost + 5% margin</li>
-                        <li>Farm-direct meat & produce splitting</li>
-                        <li>Wholesale Club group runs</li>
-                        <li>Voting rights on community decisions</li>
-                        <li>Patronage dividend on annual surplus</li>
-                        <li>Access to all NFG ventures (as they launch)</li>
-                    </ul>
-                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Coming Soon</a>
-                </div>
-                <div class="tier">
-                    <div class="tier-name">Investor Member</div>
-                    <div class="tier-price">$99/yr + $500</div>
-                    <div class="tier-period">membership + one-time share</div>
-                    <ul>
-                        <li>Everything in Community Member</li>
-                        <li>Buy investment shares ($500 each)</li>
-                        <li>Capped annual return (5-8%)</li>
-                        <li>Capital invested in local suppliers & ventures</li>
-                        <li>Voting rights on all decisions (1 vote, regardless of shares)</li>
-                        <li>Priority access to new ventures</li>
-                    </ul>
-                    <a href="#" class="cta" onclick="openModal(); return false;" style="width:100%;text-align:center;">Coming Soon</a>
-                </div>
+            <h2>Profit, Not Greed</h2>
+            <p class="subtitle">We're a different kind of company. Every decision answers to the same order: customers, employees, community, then growth.</p>
+            <div class="philosophy-box">
+                <ul>
+                    <li><strong>Customers first</strong> — fair prices, no upsells, no hidden fees. Ever.</li>
+                    <li><strong>Employees second</strong> — fair wages plus profit sharing. The people who do the work share in the win.</li>
+                    <li><strong>Community third</strong> — a share of every dollar flows back into local programs and local hiring.</li>
+                    <li><strong>Growth fourth</strong> — we are not a charity. Profit funds everything above. Greed is the only thing off the table.</li>
+                    <li><strong>Open books</strong> — our clients and our workers can see where money comes from and where it goes.</li>
+                    <li><strong>The standard</strong> — as we grow, we only do business with suppliers who meet our ethical standard. Good business begets good business.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq">
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
         <div class="container">
-            <h2>Questions</h2>
-            <p class="subtitle">The honest answers.</p>
-            <div class="faq">
-                <details class="faq-item">
-                    <summary>What exactly is NFG?</summary>
-                    <p>NFG is a <strong>cooperative incubator and business consultancy</strong>. We launch community-owned businesses — one for each necessity of modern life. The buying club is first (food, hygiene, household). Carshare + e-scooter is next (transportation). Then energy (heating, solar, microgrid). Then housing, communication, and beyond. Each venture is its own co-op under the NFG umbrella. Surplus from one funds the next. And alongside the co-ops, we work directly with small businesses: our AI back-office and consulting services help them survive and grow, and they become partners and suppliers in the co-op economy.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>How do I get AI back-office or consulting help?</summary>
-                    <p>Start with a <strong>free 30-minute workflow audit</strong>. We map your top manual processes and show you exactly what AI can take off your plate — with real numbers, no obligation. From there you can choose implementation (AI phone agent, booking, invoicing, automation) with a monthly plan that fits your size. We price transparently and offer a rescue rate for businesses genuinely at risk of closing. <a href="#join" style="color: var(--accent-bright);">Tell us about your business</a>.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>How is this different from Costco?</summary>
-                    <p>Costco gives you individual bulk access. NFG gives you <strong>collective ownership</strong>. The buying club is just venture #1 — Costco can't launch a carshare, build a solar microgrid, or start a community land trust. NFG does all of that. And Costco's profit goes to shareholders. NFG's surplus goes back to workers, members, and the community — then funds the next venture.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>Why a carshare? I can just own a car.</summary>
-                    <p>The average car sits parked <strong>95% of the time</strong>. Owning one costs $9,000+/year in payments, insurance, gas, maintenance, and depreciation. Most households need a car for errands and appointments — not all day, every day. A community carshare means you book a car when you actually need one, pay for the hours you use, and split the cost across dozens of households. Like Modo in BC, but owned by you and your neighbours.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>Is this a charity?</summary>
-                    <p>No. NFG is a for-profit enterprise — every venture must be financially self-sustaining. The difference is <strong>who gets the surplus</strong>: workers (30%), community members (20%), investors capped (10%), growth reserve (35%), community impact (5%). Profit serves people, not the other way around.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>What do investment shares actually do?</summary>
-                    <p>Share purchases form NFG's capital pool. That capital is invested in launching ventures and in local suppliers — pre-purchasing inventory, funding equipment, buying a shared vehicle, installing solar. Investors earn a capped return (5-8% annually) and get voting rights. The capital cycles — it doesn't get extracted.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>How do the ventures connect?</summary>
-                    <p>Each venture is a separate co-op business unit, but they share the NFG umbrella: common membership, shared governance, and a unified surplus waterfall. The buying club proves the model and generates trust + capital. That capital helps launch the carshare. The carshare's surplus helps launch energy. Each venture makes the next one easier — and every member benefits from all of them.</p>
-                </details>
-                <details class="faq-item">
-                    <summary>When does it start?</summary>
-                    <p><strong>Membership opens soon.</strong> We're finalizing the first cohort in the Moncton/Dieppe area for the buying club (Venture 1), scouting local suppliers, and lining up the first consulting engagements. Join the waitlist and we'll contact you the moment membership opens — with early access to the buying club.</p>
-                </details>
+            <h2>Get Your Free Workflow Audit</h2>
+            <p class="subtitle">30 minutes. We'll map your top manual processes and show you what AI can take off your plate — with real numbers, no obligation.</p>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="return handleSubmit(event)">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                        <label for="business">Business name</label>
+                        <input type="text" id="business" name="business" placeholder="Smith & Sons Plumbing">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@business.ca" required>
+                        <label for="message">What's the hardest part of your week?</label>
+                        <textarea id="message" name="message" placeholder="Missed calls, chasing invoices, scheduling chaos, thinking about closing the doors…"></textarea>
+                        <button type="submit" class="cta">Request my free audit</button>
+                        <p id="formStatus"></p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Talk to a human</h3>
+                    <p>We're small, local, and we answer our own phone. If you'd rather talk than type, reach out directly:</p>
+                    <div class="direct">✉️ <a href="mailto:milishiajay@gmail.com">milishiajay@gmail.com</a></div>
+                    <div class="direct">📍 <span>Moncton, New Brunswick — serving all of Atlantic Canada</span></div>
+                    <div class="direct">📞 <span>Phone coming soon</span></div>
+                    <p style="margin-top:20px; font-size:0.9rem;">Prefer email? We'll reply within one business day — usually faster.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1368,79 +689,35 @@
         <div class="container">
             <div class="logo">NFG Corp</div>
             <p>Not For Greed Corporation · New Brunswick, Canada</p>
-            <p style="margin-top:4px;">A cooperative incubator and business consultancy. Built by the 99%, for the 99%.</p>
+            <p style="margin-top:4px;">AI back office and business consulting for Atlantic Canada. Profit, not greed.</p>
             <div class="links">
-                <a href="#model">How It Works</a>
-                <a href="#consulting">Consulting</a>
-                <a href="#ventures">Ventures</a>
-                <a href="#necessities">Necessities</a>
-                <a href="#towns">Towns</a>
-                <a href="#suppliers">Suppliers</a>
-                <a href="#join">Join</a>
+                <a href="#services">Services</a>
+                <a href="#process">How We Work</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#contact">Contact</a>
             </div>
             <p style="margin-top:20px; font-size:0.8rem;">© 2026 Not For Greed Corporation. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JOIN MODAL -->
-    <div class="modal-overlay" id="modal">
-        <div class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3>Join NFG</h3>
-            <p>Membership opens soon. Drop your info and we'll contact you the moment it's live — plus early access to the buying club.</p>
-            <form id="join-form">
-                <div class="field">
-                    <label>Name</label>
-                    <input type="text" name="name" required placeholder="Your name">
-                </div>
-                <div class="field">
-                    <label>Email</label>
-                    <input type="email" name="email" required placeholder="you@email.com">
-                </div>
-                <div class="field">
-                    <label>Phone (optional)</label>
-                    <input type="tel" name="phone" placeholder="(506) 555-0000">
-                </div>
-                <div class="field">
-                    <label>Membership Tier</label>
-                    <select name="tier">
-                        <option value="free">Free — try it out</option>
-                        <option value="community" selected>Community Member — $99/year</option>
-                        <option value="investor">Investor Member — $99/year + $500 share</option>
-                    </select>
-                </div>
-                <div class="field">
-                    <label>Which ventures interest you most?</label>
-                    <input type="text" name="interests" placeholder="e.g. buying club, carshare, energy, AI back office for my business">
-                </div>
-                <button type="submit" class="cta" style="width:100%;text-align:center;">Get notified</button>
-            </form>
-        </div>
-    </div>
-
     <script>
-        function openModal() {
-            document.getElementById('modal').classList.add('active');
-        }
-
-        function closeModal() {
-            document.getElementById('modal').classList.remove('active');
-        }
-
-        document.getElementById('modal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
-        });
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeModal();
-        });
-
-        document.getElementById('join-form').addEventListener('submit', function(e) {
+        function handleSubmit(e) {
             e.preventDefault();
-            var modal = document.querySelector('.modal');
-            modal.innerHTML = '<span class="close" onclick="closeModal()">&times;</span><h3>You\'re on the list ✓</h3><p>We\'re finalizing the first cohort now. You\'ll hear from us the moment membership opens — plus early access to the buying club.</p>';
-            // TODO: Connect to a backend (Cloudflare Worker, Formspree, or Google Form)
-        });
+            var name = document.getElementById('name').value.trim();
+            var business = document.getElementById('business').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var message = document.getElementById('message').value.trim();
+            var subject = encodeURIComponent('Free workflow audit request — ' + (business || name));
+            var body = encodeURIComponent(
+                'Name: ' + name + '\n' +
+                'Business: ' + (business || '—') + '\n' +
+                'Email: ' + email + '\n\n' +
+                'Hardest part of the week:\n' + message
+            );
+            window.location.href = 'mailto:milishiajay@gmail.com?subject=' + subject + '&body=' + body;
+            document.getElementById('formStatus').textContent = 'Opening your email app — hit send and we\'ll take it from there.';
+            return false;
+        }
     </script>
 
 </body>
